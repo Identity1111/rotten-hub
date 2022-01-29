@@ -1,0 +1,36 @@
+local RunService = game:GetService("RunService")
+local Character = game.Players.LocalPlayer.Character
+local Farming = false
+function ask()
+    return(rconsoleinput())
+end
+
+rconsolename("Rotten hub made by SuperACK345, Derk_Eccentric, Gledatet")
+rconsoleinfo("Welcome to Rotten Hub With Synapse X.")
+rconsoleinfo("To Get Started Type Start In The Console.")
+rconsolewarn("Make Sure To Unequip The Cup!")
+
+wait(2)
+    rconsolewarn("To Disable The Farm Rejoin.")
+    wait(0.5)
+    rconsoleinfo("Setting Up...")
+    wait(0.7)
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        v.Parent = Character
+    end
+    Character.HumanoidRootPart.CFrame = CFrame.new(311.748749, -7.37074137, -270.184692, 0.968868077, -1.56784097e-09, 0.247577548, 2.28511188e-09, 1, -2.60981303e-09, -0.247577548, 3.09430703e-09, 0.968868077)
+    wait(0.1)
+    Character.HumanoidRootPart.Anchored = true
+    rconsoleinfo("Successfully Set Up.")
+    Farming = true
+
+while wait() do
+    if Farming == true then
+        for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+            if v:IsA("Tool") then
+                wait(1)
+                v.Activate(v)
+            end
+        end
+    end
+end
