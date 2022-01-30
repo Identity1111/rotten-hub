@@ -1,2 +1,2 @@
 # rotten-hub
-yes
+Rotten-hub is a very outdated
