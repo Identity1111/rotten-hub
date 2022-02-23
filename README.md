@@ -1,2 +1,2 @@
 # rotten-hub
-Rotten-hub is a very outdated script hub uwu 🙄😮
+Rotten-hub is a very outdated script hub
